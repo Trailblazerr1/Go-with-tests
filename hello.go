@@ -5,10 +5,15 @@ import (
 	"fmt"
 )
 
+const prefix = "Hello "
+
 func Hello(s string) string {
-	return "Hello " + s
+	if s == "" {
+		s = "world"
+	}
+	return prefix + s
 }
 
 func main() {
-	fmt.Println(Hello("mee"))
+	fmt.Println(Hello(""))
 }
