@@ -5,14 +5,14 @@ import "testing"
 func TestHello(t *testing.T) {
 
 	t.Run("Generic test case", func(t *testing.T) {
-		got := Hello("world")
+		got := Hello("world", "English")
 		want := "Hello world"
 		checkCorrectness(got, want, t)
 	})
 
 	t.Run("When parameter is empty, it should default to 'Hello world' ", func(t *testing.T) {
-		got := Hello("")
-		want := "Hello world"
+		got := Hello("", "Hindi")
+		want := "Namaste world"
 		checkCorrectness(got, want, t)
 	})
 }
