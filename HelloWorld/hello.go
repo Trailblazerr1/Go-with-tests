@@ -8,8 +8,8 @@ import (
 // group for readablity
 const (
 	prefixEng   = "Hello "
-	prefixHindi = "Namaste"
-	prefixUrdu  = "Salaam"
+	prefixHindi = "Namaste "
+	prefixUrdu  = "Salaam "
 
 	Hindi = "Hindi"
 	Urdu  = "Urdu"
