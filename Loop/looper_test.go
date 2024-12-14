@@ -11,3 +11,10 @@ func TestLooper(t *testing.T) {
 		}
 	})
 }
+
+func BenchmarkLooper(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		Looper("Hey", 20)
+	}
+
+}
