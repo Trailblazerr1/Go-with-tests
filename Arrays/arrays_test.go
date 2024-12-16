@@ -32,7 +32,15 @@ func TestArrays(t *testing.T) {
 		want := []int{3, 12}
 		//to compare array, use for loop or this
 		if !reflect.DeepEqual(got, want) {
-			t.Errorf("Wanted %d, got %d ", want, got)
+			t.Errorf("Wanted %v, got %v ", want, got)
+		}
+	})
+
+	t.Run("Sum of all tails in multiple slice", func(t *testing.T) {
+		got := SliceSumTails([]int{1, 2}, []int{3, 4, 5})
+		want := []int{2, 9}
+		if !reflect.DeepEqual(got, want) {
+			t.Errorf("Wanted %v, got %v", want, got)
 		}
 	})
 }
