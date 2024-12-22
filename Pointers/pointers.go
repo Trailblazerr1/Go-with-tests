@@ -15,3 +15,7 @@ func (w *Wallet) Deposit(amount ZCash) {
 func (w *Wallet) Balance() ZCash {
 	return w.balance
 }
+
+func (w *Wallet) Withdraw(amount ZCash) {
+	w.balance -= amount
+}
