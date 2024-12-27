@@ -28,6 +28,7 @@ import "testing"
 //Writing a table based tests for decoupling and refactoring
 
 func TestArea(t *testing.T) {
+	//anonymous struct
 	testParams := []struct {
 		shape Shape
 		want  float64
